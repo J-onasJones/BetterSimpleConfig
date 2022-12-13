@@ -1,7 +1,7 @@
 package net.fabric.examplemod.config;
 
 import com.mojang.datafixers.util.Pair;
-import me.jonasjones.consolemc.ConsoleMC;
+import net.fabricmc.example.ConsoleMC;
 
 public class ModConfigs {
     public static SimpleConfig CONFIG;

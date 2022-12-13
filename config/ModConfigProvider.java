@@ -1,4 +1,4 @@
-package net.fabric.examplemod.config;
+package net.fabricmc.example.config;
 
 import com.mojang.datafixers.util.Pair;
 

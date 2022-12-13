@@ -1,4 +1,4 @@
-package net.fabric.examplemod.config;
+package net.fabricmc.example.config;
 /*
  * Copyright (c) 2021 magistermaks
  * Modified by Jonas_Jones 2022
