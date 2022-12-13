@@ -25,6 +25,6 @@ public class ModConfigs {
     private static void assignConfigs() {
         EXAMPLE = CONFIG.getOrDefault("example.keypair", 420);
 
-        System.out.println("All " + configs.getConfigsList().size() + " have been set properly");
+        SimpleConfig.LOGGER.info("All " + configs.getConfigsList().size() + " have been set properly");
     }
 }
