@@ -7,9 +7,7 @@ public class ModConfigs {
     public static SimpleConfig CONFIG;
     private static ModConfigProvider configs;
 
-    public static boolean IS_ENABLED;
-    public static boolean REUQIRE_OP;
-    public static boolean ALLOW_CMD_BLOCKS;
+    public static int EXAMPLE;
 
     public static void registerConfigs() {
         configs = new ModConfigProvider();
@@ -21,15 +19,11 @@ public class ModConfigs {
     }
 
     private static void createConfigs() {
-        configs.addKeyValuePair(new Pair<>("cmd.enable", true), "whether or not to allow chat command execution.");
-        configs.addKeyValuePair(new Pair<>("cmd.requireOp", true), "whether or not operator level is required in order to run commands.");
-        configs.addKeyValuePair(new Pair<>("cmd.allowCmdBlocks", false), "whether or not commands can be run through command blocks");
+        configs.addKeyValuePair(new Pair<>("example.keypair", 69), "whether or not to allow chat command execution.");
     }
 
     private static void assignConfigs() {
-        IS_ENABLED = CONFIG.getOrDefault("cmd.enable", true);
-        REUQIRE_OP = CONFIG.getOrDefault("cmd.requireOp", true);
-        ALLOW_CMD_BLOCKS = CONFIG.getOrDefault("cmd.allowCmdBlocks", false);
+        EXAMPLE = CONFIG.getOrDefault("example.keypair", 420);
 
         System.out.println("All " + configs.getConfigsList().size() + " have been set properly");
     }
